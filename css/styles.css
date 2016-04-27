@@ -48,7 +48,8 @@ img[alt=logo] {
     width: 150px;
 }
 
-header h3 {
+header h2 {
+    top: -12px;
     position: absolute;
 }
 
