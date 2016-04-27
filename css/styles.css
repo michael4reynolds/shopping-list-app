@@ -20,18 +20,13 @@ body {
 
 header {
     width: 100%;
-    height: 85px;
-    padding: 5px 15px;
     background-color: #BF6E33;
-    transform-style: preserve-3d;
+    padding: 0 10px;
 }
 
 header > * {
     display: inline-block;
-}
-
-#logo {
-    margin-top: 10px;
+    height: 68px;
 }
 
 header img {
@@ -39,12 +34,31 @@ header img {
     width: 50px;
 }
 
-header h3 {
-    color: #333;
-    margin-left: 10px;
-    transform: translateY(-85%);
+.logo {
+    border: solid red 1px;
+    width: 18%;
 }
 
-.menu-mobile {
+img[alt=logo] {
+    padding: 7.33px 0;
+}
+
+.tagline {
+    color: #333;
+    border: solid green 1px;
+    width: 30%;
+}
+
+header h3 {
+    position: absolute;
+}
+
+.menu-button {
+    border: solid blue 1px;
+    float: right;
+    width: 34%;
+}
+
+img[alt=menu] {
     float: right;
 }
