@@ -22,6 +22,7 @@ header {
     width: 100%;
     background-color: #BF6E33;
     padding: 0 10px;
+    font-family: 'EB Garamond', serif;
 }
 
 header > * {
@@ -35,8 +36,7 @@ header img {
 }
 
 .logo {
-    border: solid red 1px;
-    width: 18%;
+    width: 65px;
 }
 
 img[alt=logo] {
@@ -45,8 +45,7 @@ img[alt=logo] {
 
 .tagline {
     color: #333;
-    border: solid green 1px;
-    width: 30%;
+    width: 150px;
 }
 
 header h3 {
@@ -54,9 +53,8 @@ header h3 {
 }
 
 .menu-button {
-    border: solid blue 1px;
     float: right;
-    width: 34%;
+    width: 70px;
 }
 
 img[alt=menu] {
