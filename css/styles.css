@@ -102,13 +102,24 @@ form input {
 }
 
 .itemrow input {
-    background-color: #F2EDDB;
     padding-left: .5em;
 }
 
 .itemrow .item {
+    background-color: #F2EDDB;
     margin-left: 1em;
     width: 14em;
+}
+
+.purchased .item {
+    margin-left: .45em;
+}
+
+.itemrow input[type=image] {
+    width: 1.75em;
+    height: 1.75em;
+    margin-left: -.6em;
+    vertical-align: top;
 }
 
 @media screen and (min-width: 400px) {
