@@ -103,6 +103,7 @@ form input {
 
 .itemrow input {
     background-color: #F2EDDB;
+    padding-left: .5em;
 }
 
 .itemrow .item {
