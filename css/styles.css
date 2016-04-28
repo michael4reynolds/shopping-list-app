@@ -122,6 +122,16 @@ form input {
     vertical-align: top;
 }
 
+.add {
+    color: #F2EDDB;
+    margin: 0;
+    font-weight: 700;
+    border-color: white;
+    border-radius: 1em;
+    width: 4em;
+    background-color: #BF6E33;
+}
+
 @media screen and (min-width: 400px) {
     .itemrow .item {
         width: 17em;
