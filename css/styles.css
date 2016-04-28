@@ -15,7 +15,8 @@ ol {
 }
 
 body {
-    background-color: wheat;
+    font-family: 'Quicksand', sans-serif;
+    background-color: #9C8573;
 }
 
 header {
@@ -28,6 +29,7 @@ header {
 header > * {
     display: inline-block;
     height: 68px;
+    vertical-align: text-top;
 }
 
 header img {
@@ -36,7 +38,7 @@ header img {
 }
 
 .logo {
-    width: 65px;
+    width: 55px;
 }
 
 img[alt=logo] {
@@ -45,19 +47,54 @@ img[alt=logo] {
 
 .tagline {
     color: #333;
-    width: 150px;
-}
-
-header h2 {
-    top: -12px;
-    position: absolute;
+    width: 172px;
 }
 
 .menu-button {
     float: right;
-    width: 70px;
+    width: 55px;
 }
 
 img[alt=menu] {
     float: right;
+}
+
+.container {
+    width: 80%;
+    margin: 1em auto 0;
+}
+
+form {
+    margin: 0 auto;
+    text-align: center;
+}
+
+form input {
+    text-align: center;
+}
+
+.label {
+    margin-top: 1.5em;
+    background-color: #4A4A4D;
+    color: #F2EDDB;
+    width: 80%;
+    text-align: center;
+}
+
+.itemrow ul > li {
+    display: inline-block;
+}
+
+.itemrow {
+    margin-bottom: .5em;
+}
+
+.item input {
+    width: 14em;
+}
+
+@media screen and (min-width: 400px) {
+    .item input {
+        width: 17em;
+    }
 }
