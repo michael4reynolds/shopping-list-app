@@ -60,8 +60,9 @@ img[alt=menu] {
 }
 
 .container {
-    width: 80%;
+    max-width: 30em;
     margin: 1em auto 0;
+    text-align: center;
 }
 
 form {
@@ -70,7 +71,15 @@ form {
 }
 
 form input {
+    border-radius: 2em;
+    border: none;
+    background-color: #F2EDDB;
+    color: #4A4A4D;
+    box-shadow: 0 1px 0 #333 inset;
+    transition: 500ms all ease;
+    width: 14em;
     text-align: center;
+    font-size: 1.3em;
 }
 
 .label {
@@ -78,7 +87,14 @@ form input {
     background-color: #4A4A4D;
     color: #F2EDDB;
     width: 80%;
-    text-align: center;
+    max-width: 15em;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    display: inline-block;
+}
+
+.label h3 {
+    margin: 0;
 }
 
 .itemrow ul > li {
@@ -91,10 +107,14 @@ form input {
 
 .item input {
     width: 14em;
+    background-color: #F2EDDB;
 }
 
 @media screen and (min-width: 400px) {
     .item input {
         width: 17em;
+    }
+    .label {
+        margin-left: -3em;
     }
 }
