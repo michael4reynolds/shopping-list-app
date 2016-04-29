@@ -15,7 +15,12 @@ $(document).ready(function () {
   $('.needed input[type=checkbox]').on('click', function () {
     console.log($(this))
     console.log($(this).parent())
-    $(this).next().css({ 'filter': 'hue-rotate(120deg)', '-webkit-filter': 'hue-rotate(120deg)' })
+
+    if ($(this).prop('checked')) {
+      $(this).next().css({ 'filter': 'hue-rotate(120deg)', '-webkit-filter': 'hue-rotate(120deg)' })
+    } else {
+      $(this).next().css({ 'filter': 'none', '-webkit-filter': 'none' })
+    }
   })
 
   $('input.add').on('click', function () {
