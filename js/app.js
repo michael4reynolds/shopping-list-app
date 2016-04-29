@@ -12,6 +12,12 @@ $(document).ready(function () {
     }
   })
 
+  $('.needed input[type=checkbox]').on('click', function () {
+    console.log($(this))
+    console.log($(this).parent())
+    $(this).next().css({ 'filter': 'hue-rotate(120deg)', '-webkit-filter': 'hue-rotate(120deg)' })
+  })
+
   $('input.add').on('click', function () {
     console.log($(this))
     let checked = $('.needed input[type=checkbox]:checked')
