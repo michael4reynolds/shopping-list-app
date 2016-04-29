@@ -11,4 +11,10 @@ $(document).ready(function () {
       $(this).val('')
     }
   })
+
+  $('input.add').on('click', function () {
+    console.log($(this))
+    let checked = $('.needed input[type=checkbox]:checked')
+    console.log(checked.length)
+  })
 })
