@@ -109,6 +109,13 @@ form input {
     background-color: #F2EDDB;
     margin-left: 1em;
     width: 14em;
+    -webkit-filter: none;
+    filter: none;
+}
+
+.itemrow .item.checked {
+    filter: hue-rotate(120deg);
+    -webkit-filter: hue-rotate(120deg);
 }
 
 .purchased .item {

@@ -10,22 +10,27 @@ $(document).ready(function () {
       e.preventDefault()
       $(this).val('')
     }
-  })
+  });
 
   $('.needed input[type=checkbox]').on('click', function () {
     console.log($(this))
     console.log($(this).parent())
 
-    if ($(this).prop('checked')) {
-      $(this).next().css({ 'filter': 'hue-rotate(120deg)', '-webkit-filter': 'hue-rotate(120deg)' })
-    } else {
-      $(this).next().css({ 'filter': 'none', '-webkit-filter': 'none' })
-    }
-  })
+    $(this).next().toggleClass('checked');
+  });
 
   $('input.add').on('click', function () {
     console.log($(this))
-    let checked = $('.needed input[type=checkbox]:checked')
+    $('.item.checked').each(function(){
+      var html = "<li class='itemrow'>";
+      html += "<input type='image' src='images/refresh.png' alt='Buy again'>";
+      html += "<input type='text' value='"+$(this).val()+"' class='item'>";
+      html += "</li>";
+      $('.purchased ul').prepend(html);
+      $(this).parent().remove();
+    });
     console.log(checked.length)
-  })
+  });
+
+
 })
