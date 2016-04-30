@@ -4,7 +4,7 @@ $(document).ready(function () {
       let item = $(this).val()
       $('.needed ul').append(`
         <li class="itemrow">
-          <input type="checkbox" name="item_a">
+          <i class="fa fa-circle-o" aria-hidden="true"></i>
           <input type="text" name="item_b" value="${item}" class="item">
         </li>`)
       e.preventDefault()
@@ -12,7 +12,10 @@ $(document).ready(function () {
     }
   })
 
-  $('.needed input[type=checkbox]').on('click', function () {
+  $('.needed').on('click', '.fa', function () {
+    $(this).toggleClass('checked')
+    $(this).toggleClass('fa-circle-o')
+    $(this).toggleClass('fa-check-circle-o')
     $(this).next().toggleClass('checked')
   })
 
@@ -20,13 +23,11 @@ $(document).ready(function () {
     $('.item.checked').each(function () {
       var html = `
         <li class='itemrow'>
-          <input type='image' src='images/refresh.png' alt='Buy again'>
+          <i class="fa fa-history" aria-hidden="true"></i>
           <input type='text' value='${$(this).val()}' class='item' readonly>
         </li>`
       $('.purchased ul').prepend(html)
       $(this).parent().remove()
     })
   })
-
-
 })
