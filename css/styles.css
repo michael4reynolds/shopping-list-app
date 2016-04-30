@@ -132,11 +132,20 @@ form input {
 .add {
     color: #F2EDDB;
     margin: 0;
+    font-size: 1.2em;
     font-weight: 700;
     border-color: white;
     border-radius: 1em;
-    width: 4em;
+    padding: .25em 4em;
     background-color: #BF6E33;
+}
+
+.add:active {
+    padding: .375em 4em .125em;
+}
+
+input:focus, textarea:focus {
+    outline: none;
 }
 
 @media screen and (min-width: 400px) {
