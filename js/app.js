@@ -21,7 +21,7 @@ $(document).ready(function () {
       var html = `
         <li class='itemrow'>
           <input type='image' src='images/refresh.png' alt='Buy again'>
-          <input type='text' value='${$(this).val()}' class='item'>
+          <input type='text' value='${$(this).val()}' class='item' readonly>
         </li>`
       $('.purchased ul').prepend(html)
       $(this).parent().remove()
