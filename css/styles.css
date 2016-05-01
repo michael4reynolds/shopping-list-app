@@ -92,19 +92,15 @@ form input {
     margin-top: 0;
     border-top: 16px solid #7a8073;
     border-bottom: 3px solid #7a8073;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-radius: 0 0 20px 20px;
 }
 
 .label {
     margin-top: 1.5em;
     background-color: #4A4A4D;
     color: #F2EDDB;
-    width: 96%;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
+    width: 100%;
+    border-radius: 30px 30px 0 0;
     display: inline-block;
 }
 
