@@ -142,6 +142,7 @@ form input {
 
 .fa:active {
     color: #BF6E33;
+    text-shadow: none;
 }
 
 .itemrow .item.checked {

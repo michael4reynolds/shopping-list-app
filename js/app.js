@@ -19,6 +19,15 @@ $(document).ready(function () {
     $(this).next().toggleClass('checked')
   })
 
+  $('.purchased').on('click', '.fa', function () {
+    var item = $(this).next().val()
+    $('.needed ul').append(`
+        <li class="itemrow">
+          <i class="fa fa-circle-o" aria-hidden="true"></i>
+          <input type="text" name="item_b" value="${item}" class="item">
+        </li>`)
+  })
+
   $('input.add').on('click', function () {
     $('.item.checked').each(function () {
       var html = `
