@@ -60,7 +60,7 @@ img[alt=menu] {
 }
 
 .container {
-    max-width: 30em;
+    max-width: 22em;
     margin: 1em auto 0;
     text-align: center;
 }
@@ -82,12 +82,27 @@ form input {
     font-size: 1.3em;
 }
 
+.needed > *,
+.purchased > * {
+    background-color: #7a8073;
+}
+
+.needed ul,
+.purchased ul {
+    margin-top: 0;
+    border-top: 16px solid #7a8073;
+    border-bottom: 3px solid #7a8073;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
 .label {
-    margin: 1.5em 0 0 -1em;
+    margin-top: 1.5em;
     background-color: #4A4A4D;
     color: #F2EDDB;
-    width: 80%;
-    max-width: 15em;
+    width: 96%;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     display: inline-block;
@@ -149,15 +164,13 @@ form input {
     padding: .375em 4em .125em;
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
     outline: none;
 }
 
 @media screen and (min-width: 400px) {
     .itemrow .item {
         width: 17em;
-    }
-    .label {
-        margin-left: -4em;
     }
 }
