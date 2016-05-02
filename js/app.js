@@ -20,7 +20,7 @@ $(document).ready(function () {
   })
 
   $('.purchased').on('click', '.fa', function () {
-    var item = $(this).next().val()
+    let item = $(this).next().val()
     $('.needed ul').append(`
         <li class="itemrow">
           <i class="fa fa-circle-o" aria-hidden="true"></i>
@@ -30,7 +30,7 @@ $(document).ready(function () {
 
   $('input.add').on('click', function () {
     $('.item.checked').each(function () {
-      var html = `
+      let html = `
         <li class='itemrow'>
           <i class="fa fa-history" aria-hidden="true"></i>
           <input type='text' value='${$(this).val()}' class='item' readonly>
