@@ -4,7 +4,7 @@
   "description": "Basic Shopping List App",
   "main": "js/app.js",
   "scripts": {
-    "browser-sync": "browser-sync start --server --files \"*.html, css/*.css, compiled/js/*.js\" --no-notify --no-open",
+    "browser-sync": "browser-sync start --server --files \"*.html, css/*.css, compiled/*.js\" --no-notify --no-open",
     "babel": "babel js -ws -d compiled --presets es2015,stage-2"
   },
   "repository": {
